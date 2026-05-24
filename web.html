@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+
+    html{
+      scroll-behavior:smooth;
+    }
+
+    body{
+      overflow-x:hidden;
+      font-family:sans-serif;
+    }
+
+    .bg-shape{
+      position:absolute;
+      right:-120px;
+      top:80px;
+      width:500px;
+      height:500px;
+      border-radius:50%;
+      background:linear-gradient(135deg,#fbcfe8,#fde2e4);
+      opacity:0.35;
+      z-index:-1;
+    }
+
+    .bg-shape2{
+      position:absolute;
+      right:50px;
+      top:150px;
+      width:350px;
+      height:350px;
+      border-radius:50%;
+      background:linear-gradient(135deg,#fecdd3,#f9a8d4);
+      opacity:0.35;
+      z-index:-1;
+    }
+
+    .profile-border{
+      background:linear-gradient(135deg,#f9a8d4,#fbcfe8);
+      padding:6px;
+      border-radius:50%;
+    }
+
+    .skill-card{
+      transition:0.3s;
+    }
+
+    .skill-card:hover{
+      transform:translateY(-8px) scale(1.03);
+    }
+    
+  
+    .side-image {
+      position: absolute;
+      left: 0px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 60px;
+    }
+
+  </style>
+
+</head>
+
+<body class="bg-[#fff7f8]">
+
+<!-- NAVBAR -->
+<div class="navbar px-8 py-4 sticky top-0 bg-[#fff7f8] z-50">
+
+  <div class="flex-1">
+    <a class="text-3xl font-bold">
+      <span class="text-pink-400">S</span>haharin
+    </a>
+  </div>
+
+  <div class="flex-none hidden md:flex">
+
+    <ul class="menu menu-horizontal px-1 text-[16px] font-medium">
+
+      <li><a href="#home">Home</a></li>
+
+      <li><a href="#about">About</a></li>
+
+      <li><a href="#skills">Skills</a></li>
+
+      <li><a href="#projects">Projects</a></li>
+
+      <li><a href="#certificates">Certificates</a></li>
+
+      <li><a href="#contact">Contact</a></li>
+
+    </ul>
+
+  </div>
+
+</div>
+
+<!-- HERO -->
+<img src="images/developer.png" alt="Developer" class="side-image">
+
+<section id="home" class="min-h-screen flex items-center px-8 md:px-16 relative">
+
+  <div class="bg-shape"></div>
+  <div class="bg-shape2"></div>
+
+  <div class="grid md:grid-cols-2 gap-10 items-center w-full">
+
+    <div>
+
+      <p class="text-xl text-pink-400 font-semibold mb-2">
+        Hello, I'm
+      </p>
+
+      <h1 class="text-5xl md:text-7xl font-bold text-[#3a2d2f]">
+        Shaharin Oni
+      </h1>
+
+      <h2 class="text-2xl md:text-3xl font-semibold mt-4 text-pink-500">
+        Frontend Developer
+      </h2>
+
+      <p class="mt-6 text-gray-500 max-w-lg">
+        I create modern and responsive websites using HTML, Tailwind CSS, DaisyUI and JavaScript.
+      </p>
+
+      <div class="mt-8 flex gap-4 flex-wrap">
+
+        <button class="btn bg-pink-400 text-white border-none rounded-full px-8">
+          Download CV
+        </button>
+
+        <button class="btn btn-outline border-pink-300 text-pink-400 rounded-full px-8">
+          Hire Me
+        </button>
+
+      </div>
+
+    </div>
+
+    <div class="flex justify-center">
+
+      <div class="profile-border">
+
+        <img src="images/Oni.jpeg"
+             class="w-[300px] h-[300px] object-cover rounded-full bg-white"/>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-28 px-6 bg-white relative overflow-hidden">
+
+  <!-- Background Blur -->
+  <div class="absolute -top-20 -left-20 w-72 h-72 bg-pink-100 rounded-full blur-3xl opacity-40"></div>
+  <div class="absolute bottom-0 right-0 w-80 h-80 bg-pink-200 rounded-full blur-3xl opacity-30"></div>
+
+  <div class="max-w-6xl mx-auto relative z-10">
+
+    <!-- Title -->
+    <div class="text-center mb-16">
+
+      <h2 class="text-5xl font-bold text-[#3a2d2f]">
+        About Me
+      </h2>
+
+      <div class="w-28 h-1 bg-pink-400 mx-auto mt-4 rounded-full"></div>
+
+      <p class="text-gray-500 mt-6 max-w-2xl mx-auto leading-8">
+        Passionate about building beautiful and responsive websites with modern frontend technologies.
+      </p>
+
+    </div>
+
+    <!-- Content -->
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+
+      <!-- Left Side -->
+      <div class="bg-[#fff7f8] p-10 rounded-[30px] shadow-xl">
+
+        <h3 class="text-3xl font-bold text-[#3a2d2f] mb-6">
+          Frontend Developer & CSE Student
+        </h3>
+
+        <p class="text-gray-600 leading-8 mb-6">
+
+          I am 
+          <span class="text-pink-400 font-semibold">
+            Shaharin Oni
+          </span>, 
+          a passionate Frontend Developer and Computer Science student at International Islamic University Chattogram.
+
+        </p>
+
+        <p class="text-gray-600 leading-8">
+
+          I love creating responsive and modern websites using HTML, CSS, Tailwind CSS, DaisyUI and JavaScript. 
+          My goal is to become a skilled full-stack developer by continuously learning and building creative projects.
+
+        </p>
+
+      </div>
+
+      <!-- Right Side Cards -->
+      <div class="grid grid-cols-2 gap-5">
+
+        <div class="bg-white p-8 rounded-3xl shadow-xl text-center border border-pink-100 hover:scale-105 transition duration-300">
+
+          <h2 class="text-4xl font-bold text-pink-400">
+            4+
+          </h2>
+
+          <p class="text-gray-500 mt-3">
+            Projects Completed
+          </p>
+
+        </div>
+
+        <div class="bg-white p-8 rounded-3xl shadow-xl text-center border border-pink-100 hover:scale-105 transition duration-300">
+
+          <h2 class="text-4xl font-bold text-pink-400">
+            CSE
+          </h2>
+
+          <p class="text-gray-500 mt-3">
+            Student
+          </p>
+
+        </div>
+
+        <div class="bg-white p-8 rounded-3xl shadow-xl text-center border border-pink-100 hover:scale-105 transition duration-300">
+
+          <h2 class="text-4xl font-bold text-pink-400">
+            Frontend
+          </h2>
+
+          <p class="text-gray-500 mt-3">
+            Web Developer
+          </p>
+
+        </div>
+
+        <div class="bg-white p-8 rounded-3xl shadow-xl text-center border border-pink-100 hover:scale-105 transition duration-300">
+
+          <h2 class="text-4xl font-bold text-pink-400">
+            UI
+          </h2>
+
+          <p class="text-gray-500 mt-3">
+            Modern Design
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="py-24 px-6 bg-base-100">
+
+  <div class="max-w-6xl mx-auto text-center">
+
+    <h2 class="text-4xl font-bold text-[#3a2d2f] mb-4">
+      My Skills
+    </h2>
+
+    <p class="text-gray-500 mb-12">
+      Technologies and tools I use to build modern websites and software projects.
+    </p>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+
+      <div class="card bg-white shadow-xl p-6 skill-card">
+        <h3 class="text-2xl font-bold text-pink-400">HTML</h3>
+        <p class="text-gray-500 mt-2">Structure of modern websites</p>
+      </div>
+
+      <div class="card bg-white shadow-xl p-6 skill-card">
+        <h3 class="text-2xl font-bold text-pink-400">CSS</h3>
+        <p class="text-gray-500 mt-2">Responsive and stylish design</p>
+      </div>
+
+      <div class="card bg-white shadow-xl p-6 skill-card">
+        <h3 class="text-2xl font-bold text-pink-400">JavaScript</h3>
+        <p class="text-gray-500 mt-2">Interactive website functionality</p>
+      </div>
+
+      <div class="card bg-white shadow-xl p-6 skill-card">
+        <h3 class="text-2xl font-bold text-pink-400">Tailwind CSS</h3>
+        <p class="text-gray-500 mt-2">Modern utility-first styling</p>
+      </div>
+
+      <div class="card bg-white shadow-xl p-6 skill-card">
+        <h3 class="text-2xl font-bold text-pink-400">DaisyUI</h3>
+        <p class="text-gray-500 mt-2">Beautiful UI components</p>
+      </div>
+
+      <div class="card bg-white shadow-xl p-6 skill-card">
+        <h3 class="text-2xl font-bold text-pink-400">C</h3>
+        <p class="text-gray-500 mt-2">Programming fundamentals</p>
+      </div>
+
+      <div class="card bg-white shadow-xl p-6 skill-card">
+        <h3 class="text-2xl font-bold text-pink-400">C++</h3>
+        <p class="text-gray-500 mt-2">OOP and problem solving</p>
+      </div>
+
+      <div class="card bg-white shadow-xl p-6 skill-card">
+        <h3 class="text-2xl font-bold text-pink-400">GitHub</h3>
+        <p class="text-gray-500 mt-2">Project management & version control</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- PROJECTS -->
+<section id="projects" class="py-20 px-8 bg-base-100">
+
+  <h2 class="text-3xl font-bold text-center mb-10">
+    My Projects
+  </h2>
+
+  <div class="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+
+    <!-- Project 1 -->
+    <div class="card bg-base-200 shadow-xl">
+
+      <div class="card-body">
+
+        <h3 class="card-title">
+          Alpha Mind Games
+        </h3>
+
+        <p class="text-gray-600">
+          HTML, CSS & JavaScript project.
+        </p>
+
+        <a href="https://github.com/Shaharin-Oni/Alpha-Mind-Games"
+           target="_blank"
+           class="btn btn-primary btn-sm w-fit">
+
+          GitHub
+
+        </a>
+
+      </div>
+
+    </div>
+
+    <!-- Project 2 -->
+    <div class="card bg-base-200 shadow-xl">
+
+      <div class="card-body">
+
+        <h3 class="card-title">
+          LushAura
+        </h3>
+
+        <p class="text-gray-600">
+          Beauty and cosmetic shop website using HTML, CSS and JavaScript.
+        </p>
+
+        <a href="https://github.com/Shaharin-Oni/LushAura"
+           target="_blank"
+           class="btn btn-primary btn-sm w-fit">
+
+          GitHub
+
+        </a>
+
+      </div>
+
+    </div>
+
+    <!-- Project 3 -->
+    <div class="card bg-base-200 shadow-xl">
+
+      <div class="card-body">
+
+        <h3 class="card-title">
+          Exam Schedule Management System
+        </h3>
+
+        <p class="text-gray-600">
+          C++ based system to manage exam schedules with add, delete and search features.
+        </p>
+
+        <a href="#"
+           class="btn btn-primary btn-sm w-fit">
+
+          GitHub
+
+        </a>
+
+      </div>
+
+    </div>
+
+    <!-- Project 4 -->
+    <div class="card bg-base-200 shadow-xl">
+
+      <div class="card-body">
+
+        <h3 class="card-title">
+          Hospital Management System
+        </h3>
+
+        <p class="text-gray-600">
+          C++ based hospital management system with patient and appointment management.
+        </p>
+
+        <a href="#"
+           class="btn btn-primary btn-sm w-fit">
+
+          GitHub
+
+        </a>
+
+      </div>
+
+    </div>
+ <!-- Project 4 -->
+    <div class="card bg-base-200 shadow-xl">
+
+      <div class="card-body">
+
+        <h3 class="card-title">
+          SmartGrow IoT Greenhouse
+        </h3>
+
+        <p class="text-gray-600">
+          IoT Based Greenhouse Environment Monitoring System And Controlling System
+        </p>
+
+        <a href="#"
+           class="btn btn-primary btn-sm w-fit">
+
+          GitHub
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CERTIFICATES -->
+<section id="certificates" class="py-24 px-6 bg-base-200">
+
+  <div class="max-w-5xl mx-auto text-center">
+
+    <h2 class="text-4xl font-bold mb-10 text-[#3a2d2f]">
+      Certificates & Achievements
+    </h2>
+
+    <div class="grid md:grid-cols-2 gap-6">
+
+      <div class="card bg-white shadow-xl">
+
+        <div class="card-body">
+
+          <h3 class="card-title text-pink-400">
+            Programming Contest Participation
+          </h3>
+
+          <p class="text-gray-600">
+            Participated in university programming contests and improved problem solving skills.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="card bg-white shadow-xl">
+
+        <div class="card-body">
+
+          <h3 class="card-title text-pink-400">
+            C Programming Course
+          </h3>
+
+          <p class="text-gray-600">
+            Learned basics of programming, loops, arrays and functions.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-24 px-6 bg-base-200">
+
+  <div class="max-w-5xl mx-auto text-center">
+
+    <h2 class="text-4xl font-bold mb-10 text-[#3a2d2f]">
+      Contact Me
+    </h2>
+
+    <div class="grid md:grid-cols-2 gap-6">
+
+      <div class="card bg-base-100 shadow-xl">
+
+        <div class="card-body items-center text-center">
+
+          <h2 class="card-title">
+            📧 Email
+          </h2>
+
+          <p class="text-gray-600">
+            onira1908@gmail.com
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="card bg-base-100 shadow-xl">
+
+        <div class="card-body items-center text-center">
+
+          <h2 class="card-title">
+            💻 GitHub
+          </h2>
+
+          <p class="text-gray-600">
+            github.com/Shaharin-Oni
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="card bg-base-100 shadow-xl">
+
+        <div class="card-body items-center text-center">
+
+          <h2 class="card-title">
+            📘 Facebook
+          </h2>
+
+          <p class="text-gray-600">
+            Facebook Profile
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="card bg-base-100 shadow-xl">
+
+        <div class="card-body items-center text-center">
+
+          <h2 class="card-title">
+            📍 Location
+          </h2>
+
+          <p class="text-gray-600">
+            Chattogram, Bangladesh
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+ 
+<!-- FOOTER -->
+<footer class="footer sm:footer-horizontal footer-center bg-base-300 text-base-content p-4">
+
+  <aside>
+    <p>
+      Copyright © 2026 - Designed & Developed by Shaharin Oni
+    </p>
+  </aside>
+
+</footer>
+
+</body>
+</html>
